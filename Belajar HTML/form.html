@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar membuat Form</title>
+</head>
+<body>
+    <form action="proses_form.php" method="get">
+        Nama : <input type="text" name="nama"/>
+        <br/>
+        Password : <input type="password" name="password"/>
+        <br/>
+        Jenis Kelamin : <input type="radio" name="jenis_kelamin" value="laki-laki" checked/>
+        Laki-laki
+        <input type="radio" name="jenis_kelamin" value="perempuan" />
+        Perempuan
+        <br/>
+        Hobi :
+        <input type="checkbox" name="ngoding"/>ngoding
+        <input type="checkbox" name="nulis"/>Menulis
+        <input type="checkbox" name="mancing"/>Memancing
+        <br/>
+        Asal Kota :
+        <select name="asalkota">
+            <option value="Kota Jakarta">Jakarta</option>
+            <option value="Kota Bandung">Bandung</option>
+            <option value="Kota Banjarmasin" selected>Banjarmasin</option>
+        </select>
+        <br/>
+        Komentar Anda :
+        <textarea name="komentar" rows="5" cols="20">
+Isi text
+        </textarea>
+        <br/>
+    </form>
+    <br/>
+    <input type="submit" value="Mulai Proses!">
+</body>
+</html>
